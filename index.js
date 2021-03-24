@@ -168,10 +168,10 @@ function createHTML() {
             <div class="media">
             <div class="media-content">
                 <p id="role" class="title is-4">Role: Manager</p>
-                <p id="name" class="title is-4">Name: ${subClass.name}</p>
-                <p id="id" class="title is-4">ID: ${subClass.id}</p>
-                <p id="email" class="title is-4">email:<a href="mailto:${subClass.email}">${subClass.email}</a></p>
-                <p id="modifier" class="title is-4">Office Number: ${subClass.officeNumber}</p>
+                <p id="name" class="title is-4">Name: ${subClass.getName()}</p>
+                <p id="id" class="title is-4">ID: ${subClass.getId()}</p>
+                <p id="email" class="title is-4">email:<a href="mailto:${subClass.getEmail()}">${subClass.getEmail()}</a></p>
+                <p id="modifier" class="title is-4">Office Number: ${subClass.getofficeNum()}</p>
             </div>
             </div>
             </div>
@@ -187,10 +187,10 @@ function createHTML() {
             <div class="media">
             <div class="media-content">
                 <p id="role" class="title is-4">Role: Engineer</p>
-                <p id="name" class="title is-4">Name: ${subClass.name}</p>
-                <p id="id" class="title is-4">ID: ${subClass.id}</p>
-                <p id="email" class="title is-4">email:<a href="mailto:${subClass.email}">${subClass.email}</a></p>
-                <p id="modifier" class="title is-4">Github profile:<a href= "https://github.com/${subClass.gitHubUsername}">${subClass.gitHubUserName}</a></p>
+                <p id="name" class="title is-4">Name: ${subClass.getName()}</p>
+                <p id="id" class="title is-4">ID: ${subClass.getId()}</p>
+                <p id="email" class="title is-4">email:<a href="mailto:${subClass.getEmail()}">${subClass.getEmail()}</a></p>
+                <p id="modifier" class="title is-4">Github profile:<a href= "https://github.com/${subClass.getGitHub()}">${subClass.getGitHub()}</a></p>
             </div>
             </div>
             </div>
@@ -206,10 +206,10 @@ function createHTML() {
             <div class="media">
             <div class="media-content">
                 <p id="role" class="title is-4">Role: Intern</p>
-                <p id="name" class="title is-4">Name: ${subClass.name}</p>
-                <p id="id" class="title is-4">ID: ${subClass.id}</p>
-                <p id="email" class="title is-4"><a href="mailto:${subClass.email}">${subClass.email}</a></p>
-                <p id="modifier" class="title is-4">School: ${subClass.school}</p>
+                <p id="name" class="title is-4">Name: ${subClass.getName()}</p>
+                <p id="id" class="title is-4">ID: ${subClass.getId()}</p>
+                <p id="email" class="title is-4"><a href="mailto:${subClass.getEmail()}">${subClass.getEmail()}</a></p>
+                <p id="modifier" class="title is-4">School: ${subClass.getSchool()}</p>
             </div>
             </div>
             </div>
