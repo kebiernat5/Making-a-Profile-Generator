@@ -51,12 +51,12 @@ function managerInfo() {
       {
         type: "input",
         name: "email",
-        message: "What is the Managers's email address?",
+        message: "What is the Manager's email address?",
       },
       {
         type: "input",
         name: "officeNumber",
-        message: "What is the Managers's office number?",
+        message: "What is the Manager's office number?",
       },
     ])
     .then((answer) => {
@@ -86,7 +86,7 @@ function engineerInfo() {
       {
         type: "input",
         name: "email",
-        message: "What is the Engineers's email address?",
+        message: "What is the Engineer's email address?",
       },
       {
         type: "input",
@@ -179,7 +179,7 @@ function createHTML() {
             `;
     }
     if (subClass.getPosition() === "Engineer") {
-      //if subclass postion == engineer
+      //if subclass position == engineer
       //create engineer card
       teamHTML += ` 
             <div class="card">
@@ -198,7 +198,7 @@ function createHTML() {
              `;
     }
     if (subClass.getPosition() === "Intern") {
-      //if subclass postion === intern
+      //if subclass position === intern
       //create intern card
       teamHTML += ` 
             <div class="card">
