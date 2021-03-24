@@ -6,7 +6,3 @@ test("getSchool test", () => {
     expect(intern.getSchool()).toBe("Wagner College")
 })
 
-test("getPosition test", () => {
-    const intern = new Intern ("Kate", "278702", "kebiernat5@gmail.com", "Intern", "Wagner College")
-    expect(intern.getPosition()).toBe("Intern")
-})

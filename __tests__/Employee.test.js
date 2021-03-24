@@ -15,7 +15,3 @@ test("getEmail test", () => {
     const employee = new Employee ("Kate", "278702", "kebiernat5@gmail.com", "Manager")
     expect(employee.getEmail()).toBe("kebiernat5@gmail.com")
 })
-test("getPosition test", () => {
-    const employee = new Employee ("Kate", "278702", "kebiernat5@gmail.com", "Manager")
-    expect(employee.getPosition()).toBe("Manager")
-})
