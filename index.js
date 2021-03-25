@@ -151,11 +151,11 @@ function createHTML() {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Employee Database</title>
-        <link rel="stylesheet" href="style.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         </head>
         <body>
-            <h1 class="header">Employee Database</h1>
-            <div class ="taco">`;
+        <h1 class="header text-white bg-secondary mb-3" style="display:flex; justify-content: center; align-items: center; padding: 50px; margin: 0 auto; background-color: grey; color: honeydew;">Employee Database</h1>
+        <div class ="container row align-items-center" style="display: flex; justify-content: center; margin: auto;"> `
   teamHTML += header;
   for (let subClass of teamArray) {
     console.log("position: ", subClass.getPosition());
@@ -163,57 +163,51 @@ function createHTML() {
     if (subClass.getPosition() === "Manager") {
       // create manager card, push into teamHTML
       teamHTML += ` 
-            <div class="card">
-            <div class="card-content">
-            <div class="media">
-            <div class="media-content">
-                <p id="role" class="title is-4">Role: Manager</p>
-                <p id="name" class="title is-4">Name: ${subClass.getName()}</p>
-                <p id="id" class="title is-4">ID: ${subClass.getId()}</p>
-                <p id="email" class="title is-4">email:<a href="mailto:${subClass.getEmail()}">${subClass.getEmail()}</a></p>
-                <p id="modifier" class="title is-4">Office Number: ${subClass.getofficeNum()}</p>
+            <div class="card text-white bg-secondary mb-3" style="width: 18rem; margin: 10px;">
+            <div class="card-body">
+              <h5 class="card-title">Role: Manager</h5>
             </div>
-            </div>
-            </div>
-            </div>
-            `;
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Name: ${subClass.getName()}</li>
+              <li class="list-group-item">ID: ${subClass.getId()}</li>
+              <li class="list-group-item">email: <a href="mailto:${subClass.email}">${subClass.getEmail()}</a></li>
+              <li class="list-group-item">Office Number: ${subClass.getofficeNum()}</li>
+            </ul>
+          </div>`;
     }
     if (subClass.getPosition() === "Engineer") {
       //if subclass position == engineer
       //create engineer card
       teamHTML += ` 
-            <div class="card">
-            <div class="card-content">
-            <div class="media">
-            <div class="media-content">
-                <p id="role" class="title is-4">Role: Engineer</p>
-                <p id="name" class="title is-4">Name: ${subClass.getName()}</p>
-                <p id="id" class="title is-4">ID: ${subClass.getId()}</p>
-                <p id="email" class="title is-4">email:<a href="mailto:${subClass.getEmail()}">${subClass.getEmail()}</a></p>
-                <p id="modifier" class="title is-4">Github profile:<a href= "https://github.com/${subClass.getGitHub()}">${subClass.getGitHub()}</a></p>
-            </div>
-            </div>
-            </div>
-            </div>
+      <div class="card text-white bg-secondary mb-3" style="width: 18rem; margin: 10px;">
+      <div class="card-body">
+        <h5 class="card-title">Role: Engineer</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Name: ${subClass.getName()}</li>
+        <li class="list-group-item">ID: ${subClass.getId()}</li>
+        <li class="list-group-item">email: <a href="mailto:${subClass.email}">${subClass.getEmail()}</a></li>
+        <li class="list-group-item">Github profile:<a href= "https://github.com/${subClass.getGitHub()}">${subClass.getGitHub()}</a><</li>
+      </ul>
+    </div>
              `;
     }
     if (subClass.getPosition() === "Intern") {
       //if subclass position === intern
       //create intern card
       teamHTML += ` 
-            <div class="card">
-            <div class="card-content">
-            <div class="media">
-            <div class="media-content">
-                <p id="role" class="title is-4">Role: Intern</p>
-                <p id="name" class="title is-4">Name: ${subClass.getName()}</p>
-                <p id="id" class="title is-4">ID: ${subClass.getId()}</p>
-                <p id="email" class="title is-4"><a href="mailto:${subClass.getEmail()}">${subClass.getEmail()}</a></p>
-                <p id="modifier" class="title is-4">School: ${subClass.getSchool()}</p>
-            </div>
-            </div>
-            </div>
-            </div>
+      <div class="card text-white bg-secondary mb-3" style="width: 18rem; margin: 10px;">
+      <div class="card-body">
+        <h5 class="card-title">Role: Intern</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Name: ${subClass.getName()}</li>
+        <li class="list-group-item">ID: ${subClass.getId()}</li>
+        <li class="list-group-item">email: <a href="mailto:${subClass.email}">${subClass.getEmail()}</a></li>
+        <li class="list-group-item">School: ${subClass.getSchool()}</li>
+      </ul>
+    </div>
+      
             `;
     }
   }

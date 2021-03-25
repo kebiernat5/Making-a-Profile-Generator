@@ -17,6 +17,7 @@
     },
     "peacock.color": "#1857a4",
     "cSpell.ignoreWords": [
+        "crossorigin",
         "getoffice"
     ]
 }
