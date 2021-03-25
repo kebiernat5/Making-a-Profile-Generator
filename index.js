@@ -187,7 +187,7 @@ function createHTML() {
         <li class="list-group-item">Name: ${subClass.getName()}</li>
         <li class="list-group-item">ID: ${subClass.getId()}</li>
         <li class="list-group-item">email: <a href="mailto:${subClass.email}">${subClass.getEmail()}</a></li>
-        <li class="list-group-item">Github profile:<a href= "https://github.com/${subClass.getGitHub()}">${subClass.getGitHub()}</a><</li>
+        <li class="list-group-item">Github profile:<a href= "https://github.com/${subClass.getGitHub()}">${subClass.getGitHub()}</a></li>
       </ul>
     </div>
              `;
